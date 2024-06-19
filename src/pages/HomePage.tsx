@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import {Github, Instagram, Linkedin, MoveRight, MoveUpRight } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="lg:w-1/2 max-w-[600px] justify-center mx-auto px-10 sm:px-0 md:px-0">
@@ -79,9 +79,11 @@ export default function HomePage() {
         </div>
         <Link
           to={"/projects"}
-          className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600"
+          className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600 flex items-center gap-2"
         >
           Featured Projects
+          <MoveRight className="w-4 h-4"/>
+          
         </Link>
         <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
           <CustomCard

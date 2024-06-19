@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const NotFound: React.FC = () => {
   const navigate = useNavigate();
-  const [seconds, setSeconds] = useState(15);
+  const [seconds, setSeconds] = useState(5);
   const [joke, setJoke] = useState('');
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const NotFound: React.FC = () => {
 
     const timer = setTimeout(() => {
       navigate('/');
-    }, 15000);
+    }, 5000);
 
     return () => {
       clearTimeout(timer);
