@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import {Github, Instagram, Linkedin, MoveRight, MoveUpRight } from "lucide-react";
+import {Github, Instagram, Linkedin, MoveRight } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="lg:w-1/2 max-w-[600px] justify-center mx-auto px-10 sm:px-0 md:px-0">
