@@ -1,9 +1,7 @@
-import { Alert, AlertTitle, AlertDescription} from "./ui/alert";
 import { Card, CardHeader, CardDescription, CardTitle } from "./ui/card";
 import { Link } from "react-router-dom";
 
-import { Terminal } from "lucide-react";
-import logo from '@/assets/react.svg'
+
 
 type CardProps = {
   title: string;

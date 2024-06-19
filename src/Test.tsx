@@ -1,12 +1,4 @@
-import CustomCard from "@/components/project-card";
-import { Link } from "react-router-dom";
-import {
-  Tooltip,
-  TooltipProvider,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Github, Instagram, Linkedin } from "lucide-react";
+
 import BlogTitle from "./pages/Blog/blog-components";
 import BackButton from "./components/back-button";
 export default function Test() {

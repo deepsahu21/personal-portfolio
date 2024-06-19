@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Github, AppWindow } from "lucide-react";
 import {
   Tooltip,
@@ -16,7 +16,6 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import { Button } from "@/components/ui/button";
 import React from "react";
 
 interface TechStackItem {
@@ -59,7 +58,6 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
-  const navigate = useNavigate();
   return (
     <>
       <div className="px-10 hidden sm:block fixed">
