@@ -107,7 +107,7 @@ export default function HomePage() {
           <CustomCard
             title="Paraillel"
             description="SWE internship where I was responsible for optimizing the user flow"
-            href=""
+            href="https://paraillel.com/"
           />
           <CustomCard
             title="OpenAQ"

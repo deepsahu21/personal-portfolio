@@ -8,22 +8,18 @@ type CardProps = {
 };
 
 const CustomCard: React.FC<CardProps> = ({ title, description, href }) => {
-  return (
+  const card = (
     <Card>
       <CardHeader>
         <CardTitle className="text-base inline-flex ">
-        {href ? (
-            <Link to={href} className="border-b-2 hover:border-neutral-600">
-              {title}
-            </Link>
-          ) : (
-            <span className="border-b-2 hover:border-neutral-600">{title}</span> // fallback if href is not provided
-          )}
+          <span className="border-b-2 hover:border-neutral-600">{title}</span>
         </CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
     </Card>
   );
+
+  return href ? <Link to={href} className="flex">{card}</Link> : card;
 };
 
 export default CustomCard;
