@@ -11,6 +11,7 @@ import Notemon from './pages/projects/Notemon'
 import Trackalack from './pages/projects/Trackalack'
 import Test from './Test'
 import Taskmon from './pages/projects/Taskmon'
+import NotFound from './pages/NotFound'
 function App() {
 
   return (
@@ -26,6 +27,7 @@ function App() {
      <Route path='/projects/trackalack' element={<Trackalack/>}/>
      <Route path='/test' element={<Test/>}/>
      <Route path='/projects/taskmon' element={<Taskmon/>}/>
+     <Route path="*" element={<NotFound />}/>
 
 
       </Routes>

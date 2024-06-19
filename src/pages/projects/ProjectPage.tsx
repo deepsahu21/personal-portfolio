@@ -46,6 +46,8 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
 
+
+
   React.useEffect(() => {
     if (!api) {
       return;
@@ -129,25 +131,20 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
             </div>
           </div>
           <Carousel setApi={setApi}>
-            <CarouselContent>
-              {images.map(
-                (
-                  image,
-                  index // map over the images array to create a CarouselItem for each image
-                ) => (
-                  <CarouselItem key={index}>
-                    <img
-                      className="rounded-md border-2 shadow-lg"
-                      src={image}
-                      alt={`${title} image`}
-                    />
-                  </CarouselItem>
-                )
-              )}
-            </CarouselContent>
-            <CarouselPrevious className="sm:flex hidden" />
-            <CarouselNext className="sm:flex hidden" />
-          </Carousel>
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem key={index}>
+              <img
+                className="rounded-md border-2 shadow-lg"
+                src={image}
+                alt={`${title} image`}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="sm:flex hidden" />
+        <CarouselNext className="sm:flex hidden" />
+      </Carousel>
           <div className="text-center text-sm text-muted-foreground">
             {current} of {count}
           </div>
