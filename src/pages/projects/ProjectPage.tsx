@@ -87,6 +87,27 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
       </div>
       <div className="lg:w-1/2 max-w-[600px] justify-center mx-auto px-10 sm:px-0 md:px-0">
         <div className="flex gap-4 flex-col">
+        <Link
+              className="text-white p-2 sm:hidden mr-4 font-newsreader italic flex gap-2 translate-x-[-20px] translate-y-[-30px]"
+              to={"/projects"}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-undo-2"
+              >
+                <path d="M9 14 4 9l5-5" />
+                <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
+              </svg>
+              Projects
+            </Link>
           <div className="flex justify-between items-center">
             <button className="font-bold border-b-2 text-lg hover:border-neutral-600 inline-block font-inter">
               {title}
