@@ -19,7 +19,7 @@ const Taskmon: React.FC = () => {
       images={[image]}
       techStack={techStack}
       githubLink="https://github.com/HejSidharth/Taskmon"
-      websiteLink="https://taskmon.netlify.com"
+      websiteLink="https://taskmon.netlify.app"
     />
   );
 };
