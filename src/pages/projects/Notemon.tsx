@@ -17,11 +17,11 @@ const Notemon: React.FC = () => {
   return (
     <ProjectPage
       title="Notemon"
-      description="To earn additional income, I offer tutoring services. As a tutor, I was responsible for conducting office hours for an SAT preparation class. This role was enjoyable until the number of students in the Zoom meeting exceeded ten, resulting in a deluge of questions. Managing the influx of inquiries and maintaining the order in which questions were asked became increasingly challenging. This experience motivated me to develop an organized system to streamline the process Student Queue!"
+      description="I hate it when I start a new coding project and need to go back to my old repositories and copy code that would help with the setup. This is why I built Notemon, an application to save your code snippits. This was my first project working with additional libraries such as Tiptap. Really fun project! "
       images={[image]}
       techStack={techStack}
-      githubLink="https://github.com/your-repo"
-      websiteLink="https://your-website.com"
+      githubLink="https://github.com/HejSidharth/Notemon"
+      websiteLink="https://notemon.netlify.app"
     />
   );
 };
