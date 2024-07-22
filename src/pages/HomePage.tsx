@@ -122,9 +122,11 @@ export default function HomePage() {
             href="https://www.inclusivestem.org/"
           />
         </div>
+        <Link to="https://blog.hejamadi.com">
         <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
           My Blog
         </button>
+        </Link>
         <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
           <CustomCard
             title="Coming soon..."
