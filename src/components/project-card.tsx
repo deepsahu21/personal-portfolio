@@ -13,10 +13,10 @@ import {
 } from "@/components/ui/tooltip";
 import ReactLogo from "@/assets/react.svg";
 import TailwindLogo from "@/assets/tailwindcss.svg";
-import ShadcnLogo from "@/assets/shadcn-ui.png";
-import DaisyLogo from "@/assets/daisyui.svg";
+// import ShadcnLogo from "@/assets/shadcn-ui.png";
+// import DaisyLogo from "@/assets/daisyui.svg";
 import SupabaseLogo from "@/assets/supabase-logo-icon.svg";
-import ViteLogo from "@/assets/vite.svg";
+// import ViteLogo from "@/assets/vite.svg";
 import AppwriteLogo from "@/assets/appwrite.svg";
 import ClerkLogo from "@/assets/clerk.ico";
 import TypescriptLogo from "@/assets/typescript.png";
@@ -28,7 +28,7 @@ import FigmaLogo from "@/assets/figma.ico"
 import ChakraLogo from "@/assets/Chakra.png"
 
 import { Link } from "react-router-dom";
-import { MoreHorizontal, PlusCircle } from "lucide-react";
+import { MoreHorizontal } from "lucide-react";
 
 type CardProps = {
   title: string;
@@ -65,7 +65,6 @@ const CustomCard: React.FC<CardProps> = ({
   href,
   stack,
 }) => {
-  console.log(stack)
   const card = (
     <Card>
       <CardHeader>

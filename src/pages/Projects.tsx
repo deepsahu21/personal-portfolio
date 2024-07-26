@@ -1,4 +1,4 @@
-import CustomCard, { AIWeatherCard, NotemonCard, StudentQueueCard, TaskmonCard, TrackalackCard } from "@/components/project-card";
+import { AIWeatherCard, NotemonCard, StudentQueueCard, TaskmonCard, TrackalackCard } from "@/components/project-card";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
