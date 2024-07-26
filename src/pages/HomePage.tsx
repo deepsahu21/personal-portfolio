@@ -1,4 +1,4 @@
-import CustomCard from "@/components/project-card";
+import CustomCard, { InclusiveStemCard, NotemonCard, OpenAQCard, ParaillelCard, StudentQueueCard, TrackalackCard } from "@/components/project-card";
 import { Link } from "react-router-dom";
 import {
   Tooltip,
@@ -7,8 +7,17 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import {Github, Instagram, Linkedin, MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
+
+
+
 export default function HomePage() {
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
     <div className="lg:w-1/2 max-w-[600px] justify-center mx-auto px-10 sm:px-0 md:px-0">
       <div className="flex gap-4 flex-col">
         <div className="flex justify-between items-center">
@@ -16,6 +25,7 @@ export default function HomePage() {
             Sidharth Hejamadi
           </button>
           <div className="flex gap-3">
+         
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -73,8 +83,8 @@ export default function HomePage() {
               Designing, coding, and innovating.
             </span>{" "}
             This is what I do, I am Sidharth Hejamadi and I love making websites
-            and solving problems. I attend the University of Urbana-Champaign
-            studying Computer Science and Statistics.
+            and solving problems. I attend the <span className="italic font-newsreader">University of Urbana-Champaign</span>
+            {" "}studying Computer Science and Statistics.
           </p>
         </div>
         <Link
@@ -86,45 +96,26 @@ export default function HomePage() {
           
         </Link>
         <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-          <CustomCard
-            title="Student Queue"
-            description="A website created to queue students during tutoring classes."
-            href="/projects/student-queue"
-          />
-          <CustomCard
-            title="Trackalack"
-            description="A website created to track homework assignments for fellow students"
-            href="/projects/trackalack"
-          />
-          <CustomCard
-            title="Notemon"
-            description="A website created to save code snippits for later use"
-            href="/projects/notemon"
-          />
+          <StudentQueueCard/>
+          <TrackalackCard/>
+          <NotemonCard/>
         </div>
         <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
           Featured Experience
         </button>
         <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-          <CustomCard
-            title="Paraillel"
-            description="SWE internship where I was responsible for optimizing the user flow"
-            href="https://paraillel.com/"
-          />
-          <CustomCard
-            title="OpenAQ"
-            description="Worked on a project designing and developing an AQI education tool"
-            href="https://openaq.org/"
-          />
-          <CustomCard
-            title="Inclusive STEM"
-            description="Worked on a project designing and developing an inclusive library"
-            href="https://www.inclusivestem.org/"
-          />
+          <ParaillelCard/>
+         <OpenAQCard/>
+          <InclusiveStemCard/>
         </div>
-        <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
+        <Link
+          to={"https://blog.hejamadi.com"}
+          className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600 flex items-center gap-2"
+        >
           My Blog
-        </button>
+          <MoveRight className="w-4 h-4"/>
+          
+        </Link>
         <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
           <CustomCard
             title="Coming soon..."
@@ -134,5 +125,6 @@ export default function HomePage() {
       </div>
       <footer className="h-10"> {/* This is a box */}</footer>
     </div>
+    </motion.div>
   );
 }

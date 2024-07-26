@@ -1,4 +1,4 @@
-import CustomCard from "@/components/project-card";
+import CustomCard, { AIWeatherCard, NotemonCard, StudentQueueCard, TaskmonCard, TrackalackCard } from "@/components/project-card";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -65,31 +65,11 @@ export default function Projects() {
             Project List
           </button>
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3 mb-10">
-            <CustomCard
-              title="Student Queue"
-              description="A website created to queue students during tutoring classes."
-              href="/projects/student-queue"
-            />
-            <CustomCard
-              title="Trackalack"
-              description="A website created to track homework assignments for fellow students"
-              href="/projects/trackalack"
-            />
-            <CustomCard
-              title="Notemon"
-              description="A website created to save code snippits for later use"
-              href="/projects/notemon"
-            />
-            <CustomCard
-              title="Taskmon"
-              description="A website created to store tasks with a cool aesthetic "
-              href="/projects/taskmon"
-            />
-            <CustomCard
-              title="AI Weather App"
-              description="An AI weather app that reccomends what to wear given the weather"
-              href="https://github.com/HejSidharth/HonestWeather"
-            />
+            <StudentQueueCard/>
+            <TrackalackCard/>
+            <NotemonCard/>
+            <TaskmonCard/>
+            <AIWeatherCard/>
           </div>
         </div>
       </div>
