@@ -196,3 +196,15 @@ export function InclusiveStemCard() {
     />
   );
 }
+
+
+export function TeamPayCard() {
+  return (
+    <CustomCard
+      title="Team Pay"
+      description="Worked on a SAAS that helped business owners track pay"
+      href="/projects/team-pay"
+      stack={["Typescript", "React", "Supabase", "Tailwind"]}
+    />
+  );
+}

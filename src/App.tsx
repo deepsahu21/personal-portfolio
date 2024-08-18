@@ -12,6 +12,7 @@ import Trackalack from './pages/projects/Trackalack'
 import Test from './Test'
 import Taskmon from './pages/projects/Taskmon'
 import NotFound from './pages/NotFound'
+import TeamPay from './pages/projects/TeamPay'
 function App() {
 
   return (
@@ -27,6 +28,7 @@ function App() {
      <Route path='/projects/trackalack' element={<Trackalack/>}/>
      <Route path='/test' element={<Test/>}/>
      <Route path='/projects/taskmon' element={<Taskmon/>}/>
+     <Route path='/projects/team-pay' element={<TeamPay/>}/>
      <Route path="*" element={<NotFound />}/>
 
 

@@ -1,4 +1,4 @@
-import CustomCard, { InclusiveStemCard, NotemonCard, OpenAQCard, ParaillelCard, StudentQueueCard, TrackalackCard } from "@/components/project-card";
+import CustomCard, { InclusiveStemCard, NotemonCard, OpenAQCard, ParaillelCard,  TeamPayCard, TrackalackCard } from "@/components/project-card";
 import { Link } from "react-router-dom";
 import {
   Tooltip,
@@ -96,7 +96,7 @@ export default function HomePage() {
           
         </Link>
         <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-          <StudentQueueCard/>
+          <TeamPayCard/>
           <TrackalackCard/>
           <NotemonCard/>
         </div>
