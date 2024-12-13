@@ -1,4 +1,11 @@
-import { AIWeatherCard, NotemonCard, StudentQueueCard, TaskmonCard, TeamPayCard, TrackalackCard } from "@/components/project-card";
+import {
+  AIWeatherCard,
+  NotemonCard,
+  StudentQueueCard,
+  TaskmonCard,
+  TeamPayCard,
+  TrackalackCard,
+} from "@/components/project-card";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -65,12 +72,11 @@ export default function Projects() {
             Project List
           </button>
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3 mb-10">
-            <TeamPayCard/>
-            <StudentQueueCard/>
-            <TrackalackCard/>
-            <NotemonCard/>
-            <TaskmonCard/>
-            <AIWeatherCard/>
+            <TeamPayCard />
+            <TrackalackCard />
+            <NotemonCard />
+            <TaskmonCard />
+            <AIWeatherCard />
           </div>
         </div>
       </div>
