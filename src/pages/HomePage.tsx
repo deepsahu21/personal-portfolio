@@ -3,7 +3,6 @@ import {
   InclusiveStemCard,
   NotemonCard,
   OpenAQCard,
-  ParaillelCard,
   TeamPayCard,
   TrackalackCard,
 } from "@/components/project-card";
