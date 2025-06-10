@@ -17,12 +17,12 @@ import SupabaseLogo from "@/assets/supabase-logo-icon.svg";
 import AppwriteLogo from "@/assets/appwrite.svg";
 import ClerkLogo from "@/assets/clerk.ico";
 import TypescriptLogo from "@/assets/typescript.png";
-import OpenAILogo from "@/assets/openai-icon.svg"
-import FlaskLogo from "@/assets/pocoo_flask-icon.svg"
-import SolidLogo from "@/assets/solidjs.png"
-import SCSSLogo from "@/assets/scss.png"
-import FigmaLogo from "@/assets/figma.ico"
-import ChakraLogo from "@/assets/Chakra.png"
+import OpenAILogo from "@/assets/openai-icon.svg";
+import FlaskLogo from "@/assets/pocoo_flask-icon.svg";
+import SolidLogo from "@/assets/solidjs.png";
+import SCSSLogo from "@/assets/scss.png";
+import FigmaLogo from "@/assets/figma.ico";
+import ChakraLogo from "@/assets/Chakra.png";
 
 import { Link } from "react-router-dom";
 import { MoreHorizontal } from "lucide-react";
@@ -39,18 +39,18 @@ interface Dictionary {
 }
 
 let dStack: Dictionary = {
-  "React": { name: "React", img: ReactLogo },
-  "Tailwind": { name: "Tailwind", img: TailwindLogo },
-  "Supabase": { name: "Supabase", img: SupabaseLogo },
-  "Appwrite": { name: "Appwrite", img: AppwriteLogo },
-  "Clerk": { name: "Clerk", img: ClerkLogo },
-  "Typescript": { name: "Typescript", img: TypescriptLogo },
-  "OpenAI": { name: "OpenAI", img: OpenAILogo },
-  "Flask": { name: "Flask", img: FlaskLogo },
-  "Solid": { name: "Solid", img: SolidLogo },
-  "SCSS": { name: "SCSS", img: SCSSLogo },
-  "Figma": { name: "Figma", img: FigmaLogo },
-  "Chakra": { name: "Chakra", img: ChakraLogo },
+  React: { name: "React", img: ReactLogo },
+  Tailwind: { name: "Tailwind", img: TailwindLogo },
+  Supabase: { name: "Supabase", img: SupabaseLogo },
+  Appwrite: { name: "Appwrite", img: AppwriteLogo },
+  Clerk: { name: "Clerk", img: ClerkLogo },
+  Typescript: { name: "Typescript", img: TypescriptLogo },
+  OpenAI: { name: "OpenAI", img: OpenAILogo },
+  Flask: { name: "Flask", img: FlaskLogo },
+  Solid: { name: "Solid", img: SolidLogo },
+  SCSS: { name: "SCSS", img: SCSSLogo },
+  Figma: { name: "Figma", img: FigmaLogo },
+  Chakra: { name: "Chakra", img: ChakraLogo },
 };
 
 const CustomCard: React.FC<CardProps> = ({
@@ -88,7 +88,7 @@ const CustomCard: React.FC<CardProps> = ({
                 </Tooltip>
               </TooltipProvider>
             ))}
-          {stack && (
+          {stack && stack.length !== 0 && (
             <div className="border rounded-2xl grayscale p-1">
               <MoreHorizontal className="w-2 h-2" />
             </div>
@@ -170,7 +170,18 @@ export function ParaillelCard() {
       title="Paraillel"
       description="SWE internship where I was responsible for optimizing the user flow"
       href="https://paraillel.com/"
-      stack={["React", "Flask", "Tailwind"]}
+      stack={[]}
+    />
+  );
+}
+
+export function GeicoCard() {
+  return (
+    <CustomCard
+      title="Geico"
+      description="Software Engineering Intern at Geico | Database Management"
+      href="https://geico.com/"
+      stack={[]}
     />
   );
 }
@@ -196,7 +207,6 @@ export function InclusiveStemCard() {
     />
   );
 }
-
 
 export function TeamPayCard() {
   return (

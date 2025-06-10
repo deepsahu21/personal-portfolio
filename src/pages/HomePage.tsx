@@ -1,4 +1,5 @@
 import {
+  GeicoCard,
   InclusiveStemCard,
   NotemonCard,
   OpenAQCard,
@@ -13,7 +14,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Github,  Linkedin, MoveRight } from "lucide-react";
+import { Github, Linkedin, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HomePage() {
@@ -30,7 +31,6 @@ export default function HomePage() {
               Sidharth Hejamadi
             </button>
             <div className="flex gap-3">
-              
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -69,15 +69,23 @@ export default function HomePage() {
           <div>
             <p className="font-inter text-base">
               <span className="italic font-newsreader">
-                Designing, coding, and innovating.
+                Coding, designing, and building.
               </span>{" "}
-              This is what I do, I am Sidharth Hejamadi and I love making
-              websites and solving problems. I attend the{" "}
+              This is what I do, I am Sidharth Hejamadi and I love solving
+              problems. I attend the{" "}
               <span className="italic font-newsreader">
                 University of Urbana-Champaign
               </span>{" "}
               studying Computer Science and Statistics.
             </p>
+          </div>
+          <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
+            Featured Experience
+          </button>
+          <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
+            <GeicoCard />
+            <OpenAQCard />
+            <InclusiveStemCard />
           </div>
           <Link
             to={"/projects"}
@@ -90,14 +98,6 @@ export default function HomePage() {
             <TeamPayCard />
             <TrackalackCard />
             <NotemonCard />
-          </div>
-          <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
-            Featured Experience
-          </button>
-          <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-            <ParaillelCard />
-            <OpenAQCard />
-            <InclusiveStemCard />
           </div>
         </div>
         <footer className="h-10"> {/* This is a box */}</footer>

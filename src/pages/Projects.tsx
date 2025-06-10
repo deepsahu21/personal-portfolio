@@ -1,7 +1,6 @@
 import {
   AIWeatherCard,
   NotemonCard,
-  StudentQueueCard,
   TaskmonCard,
   TeamPayCard,
   TrackalackCard,
