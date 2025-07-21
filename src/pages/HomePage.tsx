@@ -1,10 +1,10 @@
 import {
-  GeicoCard,
-  InclusiveStemCard,
-  NotemonCard,
-  OpenAQCard,
-  TeamPayCard,
-  TrackalackCard,
+  MlModelDeveloperCard,
+  StoratoCard,
+  StockAppCard,
+  UndergraduateResearcherCard,
+  UnetEdgeDetectionCard,
+  WeatherAppCard,
 } from "@/components/project-card";
 import { Link } from "react-router-dom";
 import {
@@ -27,14 +27,14 @@ export default function HomePage() {
         <div className="flex gap-4 flex-col">
           <div className="flex justify-between items-center">
             <button className="font-bold border-b-2 text-lg hover:border-neutral-600 inline-block font-inter">
-              Sidharth Hejamadi
+              Deep Sahu
             </button>
             <div className="flex gap-3">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <a
-                      href={"https://github.com/HejSidharth"}
+                      href={"https://github.com/deepsahu21"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -50,7 +50,7 @@ export default function HomePage() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <a
-                      href={"https://www.linkedin.com/in/sidharth-hejamadi"}
+                      href={"https://www.linkedin.com/in/deepsahu1/"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -68,23 +68,22 @@ export default function HomePage() {
           <div>
             <p className="font-inter text-base">
               <span className="italic font-newsreader">
-                Coding, designing, and building.
+                Developing, optimizing, and engineering systems.
               </span>{" "}
-              This is what I do, I am Sidharth Hejamadi and I love solving
-              problems. I attend the{" "}
+               I'm Deep Sahu, a Data Science student at the{" "}
               <span className="italic font-newsreader">
-                University of Urbana-Champaign
+                University of Georgia
               </span>{" "}
-              studying Computer Science and Statistics.
+              passionate about machine learning and building innovative technology. With a strong foundation in both software development and machine learning, I enjoy creating systems that solve real-world problems and deliver meaningful impact.
             </p>
           </div>
           <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
             Featured Experience
           </button>
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-            <GeicoCard />
-            <OpenAQCard />
-            <InclusiveStemCard />
+            <StoratoCard/>
+            <MlModelDeveloperCard  />
+            <UndergraduateResearcherCard />
           </div>
           <Link
             to={"/projects"}
@@ -94,9 +93,9 @@ export default function HomePage() {
             <MoveRight className="w-4 h-4" />
           </Link>
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-            <TeamPayCard />
-            <TrackalackCard />
-            <NotemonCard />
+            <UnetEdgeDetectionCard />
+            <WeatherAppCard />
+            <StockAppCard />
           </div>
         </div>
         <footer className="h-10"> {/* This is a box */}</footer>

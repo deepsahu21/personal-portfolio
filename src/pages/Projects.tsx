@@ -1,9 +1,7 @@
 import {
-  AIWeatherCard,
-  NotemonCard,
-  TaskmonCard,
-  TeamPayCard,
-  TrackalackCard,
+  StockAppCard,
+  UnetEdgeDetectionCard,
+  WeatherAppCard,
 } from "@/components/project-card";
 import { Link } from "react-router-dom";
 
@@ -63,19 +61,16 @@ export default function Projects() {
           </div>
           <div>
             <p className="font-inter text-base">
-              These are some of the projects I have made when bored, or when I
-              have faced an annoying problem that I needed a quick fix for :)
+              Here are some projects I made to explore new ideas and grow my skills. Each links to the GitHub repo if you’d like a closer look  :)
             </p>
           </div>
           <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
             Project List
           </button>
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3 mb-10">
-            <TeamPayCard />
-            <TrackalackCard />
-            <NotemonCard />
-            <TaskmonCard />
-            <AIWeatherCard />
+            <UnetEdgeDetectionCard />
+            <WeatherAppCard />
+            <StockAppCard />
           </div>
         </div>
       </div>

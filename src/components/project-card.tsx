@@ -109,6 +109,39 @@ const CustomCard: React.FC<CardProps> = ({
 
 export default CustomCard;
 
+export function MlModelDeveloperCard() {
+  return (
+    <CustomCard
+      title="AI@UGA"
+      description="ML Model Developer & Systems Integrator | Publication in progress"
+      stack={[]}
+    />
+  );
+}
+
+export function UndergraduateResearcherCard() {
+  return (
+    <CustomCard
+      title="Multispecteral Imagery Laboratory"
+      description="Undergraduate Researcher | Conducted machine learning research on dental x-rays for caries detection "
+      href="https://milab.uga.edu/"
+      stack={[]}
+    />
+  );
+}
+
+export function UnetEdgeDetectionCard() {
+  return (
+    <CustomCard
+      title="U-Net Edge Detection"
+      description="Fine-tuned a U-Net model for crisp edge detection on natural scenes."
+      href="https://github.com/deepsahu1/Edge-Detection"
+      stack={[]}
+    />
+  );
+}
+
+
 export function StudentQueueCard() {
   return (
     <CustomCard
@@ -120,24 +153,24 @@ export function StudentQueueCard() {
   );
 }
 
-export function TrackalackCard() {
+export function WeatherAppCard() {
   return (
     <CustomCard
-      title="Trackalack"
-      description="A website created to track homework assignments for fellow students"
-      href="/projects/trackalack"
-      stack={["React", "Clerk", "Tailwind", "Supabase"]}
+      title="Weather App"
+      description="A Flask web app to fetch real-time weather data with an interactive map."
+      href="https://github.com/deepsahu21/Weather-App-project"
+      stack={[]}
     />
   );
 }
 
-export function NotemonCard() {
+export function StockAppCard() {
   return (
     <CustomCard
-      title="Notemon"
-      description="A website created to save code snippets for later use"
-      href="/projects/notemon"
-      stack={["React", "Clerk", "Tailwind", "Appwrite"]}
+      title="Stock Insights & News App"
+      description="A JavaFX desktop app for live stock data and latest news headlines."
+      href="https://github.com/deepsahu21/StockInfo-website"
+      stack={[]}
     />
   );
 }
@@ -175,46 +208,18 @@ export function ParaillelCard() {
   );
 }
 
-export function GeicoCard() {
+
+
+
+
+export function StoratoCard() {
   return (
     <CustomCard
-      title="Geico"
-      description="Software Engineering Intern at Geico | Database Management"
-      href="https://geico.com/"
+      title="Storato"
+      description="Founding Engineer | Leading ML systems and data pipelines at a fast-growing startup."
+      href={undefined}
       stack={[]}
     />
   );
 }
 
-export function OpenAQCard() {
-  return (
-    <CustomCard
-      title="OpenAQ"
-      description="Worked on a project designing and developing an AQI education tool"
-      href="https://openaq.org/"
-      stack={["Solid", "SCSS", "Figma"]}
-    />
-  );
-}
-
-export function InclusiveStemCard() {
-  return (
-    <CustomCard
-      title="Inclusive STEM"
-      description="Worked on a project designing and developing an inclusive library"
-      href="https://www.inclusivestem.org/"
-      stack={["Typescript", "React", "Chakra"]}
-    />
-  );
-}
-
-export function TeamPayCard() {
-  return (
-    <CustomCard
-      title="Team Pay"
-      description="Worked on a SAAS that helped business owners track pay"
-      href="/projects/team-pay"
-      stack={["Typescript", "React", "Supabase", "Tailwind"]}
-    />
-  );
-}
