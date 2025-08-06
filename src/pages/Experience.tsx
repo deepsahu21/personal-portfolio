@@ -1,6 +1,90 @@
+import {
+  SatelliteResearchCard,
+  StoratoCard,
+  MlModelDeveloperCard,
+  UndergraduateResearcherCard,
+} from "@/components/project-card";
+import { Link } from "react-router-dom";
 
 export default function Experience() {
   return (
-    <div>Experience</div>
-  )
+    <>
+      {/* Desktop Back to Home */}
+      <div className="px-10 hidden sm:block fixed">
+        <Link
+          className="text-white p-2 mr-4 font-newsreader italic flex gap-2"
+          to="/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-undo-2"
+          >
+            <path d="M9 14 4 9l5-5" />
+            <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
+          </svg>
+          Home
+        </Link>
+      </div>
+
+      {/* Main Content */}
+      <div className="lg:w-1/2 max-w-[600px] justify-center mx-auto px-10 sm:px-0 md:px-0">
+        <div className="flex gap-4 flex-col">
+
+          {/* Mobile Back to Home + Page Title */}
+          <div>
+            <Link
+              className="text-white p-2 sm:hidden mr-4 font-newsreader italic flex gap-2 translate-x-[-20px] translate-y-[-30px]"
+              to="/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-undo-2"
+              >
+                <path d="M9 14 4 9l5-5" />
+                <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
+              </svg>
+              Home
+            </Link>
+            <button className="font-bold border-b-2 text-lg hover:border-neutral-600 inline-block font-inter">
+              My Experience
+            </button>
+          </div>
+
+          {/* Description */}
+          <div>
+            <p className="font-inter text-base">
+              Here are some of my experiences where I got to apply my skills in real cases :)
+            </p>
+          </div>
+
+          {/* Experience List */}
+          <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
+            Experience List
+          </button>
+          <div className="flex flex-col gap-6 md:grid md:grid-cols-3 mb-10">
+            <SatelliteResearchCard />
+            <StoratoCard />
+            <MlModelDeveloperCard />
+            <UndergraduateResearcherCard />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

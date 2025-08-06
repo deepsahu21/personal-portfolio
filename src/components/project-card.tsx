@@ -223,3 +223,13 @@ export function StoratoCard() {
   );
 }
 
+export function SatelliteResearchCard() {
+  return (
+    <CustomCard
+      title="Center for Geospatial Research "
+      description="Undergraduate Researcher | Applying ML to satellite imagery for environmental insights."
+      href={undefined} // or provide a link to a paper, GitHub, or portfolio if available
+      stack={[]} // add relevant tech stack if needed, e.g. ['Python', 'TensorFlow']
+    />
+  );
+}

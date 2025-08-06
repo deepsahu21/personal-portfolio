@@ -1,5 +1,6 @@
 import {
   MlModelDeveloperCard,
+  SatelliteResearchCard,
   StoratoCard,
   StockAppCard,
   UndergraduateResearcherCard,
@@ -77,21 +78,33 @@ export default function HomePage() {
               passionate about machine learning and building innovative technology. With a strong foundation in both software development and machine learning, I enjoy creating systems that solve real-world problems and deliver meaningful impact.
             </p>
           </div>
-          <button className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600">
-            Featured Experience
-          </button>
-          <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-            <StoratoCard/>
-            <MlModelDeveloperCard  />
-            <UndergraduateResearcherCard />
-          </div>
           <Link
-            to={"/projects"}
-            className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600 flex items-center gap-2"
+            to="/experience"
+            className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600 flex items-center gap-2 group"
           >
-            Featured Projects
+            Featured Experience
+            <span className="text-xs text-neutral-400 ml-2 group-hover:text-neutral-200">
+              (Click to see more)
+            </span>
             <MoveRight className="w-4 h-4" />
           </Link>
+
+          <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
+            <SatelliteResearchCard />
+            <StoratoCard/>
+            <MlModelDeveloperCard  />
+          </div>
+          <Link
+            to="/projects"
+            className="font-newsreader italic font-medium mt-10 border-b-2 w-max hover:border-neutral-600 flex items-center gap-2 group"
+          >
+            Featured Projects
+            <span className="text-xs text-neutral-400 ml-2 group-hover:text-neutral-200">
+              (Click to see more)
+            </span>
+            <MoveRight className="w-4 h-4" />
+          </Link>
+
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
             <UnetEdgeDetectionCard />
             <WeatherAppCard />
