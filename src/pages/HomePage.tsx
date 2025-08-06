@@ -3,7 +3,6 @@ import {
   SatelliteResearchCard,
   StoratoCard,
   StockAppCard,
-  UndergraduateResearcherCard,
   UnetEdgeDetectionCard,
   WeatherAppCard,
 } from "@/components/project-card";
